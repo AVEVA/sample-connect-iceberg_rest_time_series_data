@@ -53,12 +53,15 @@ jobs:
             python -m pip freeze
           displayName: 'Install Python dependencies'
         - script: |
-            echo "Running pytest"
-            python -m pytest -q --junitxml=test-results/pytest-results.xml
-          displayName: 'Run pytest tests'
+            echo "Running tests"
+            python -c "import os; os.makedirs(r'$(Build.SourcesDirectory)/test-results', exist_ok=True)"
+            python -m pytest -q --junitxml="$(Build.SourcesDirectory)/test-results/pytest.xml"
+          displayName: 'Run pytest'
         - task: PublishTestResults@2
           displayName: 'Publish pytest results'
+          condition: succeededOrFailed()
           inputs:
             testResultsFormat: 'JUnit'
-            testResultsFiles: 'test-results/pytest-results.xml'
-            testRunTitle: 'Python pytest results'
+            testResultsFiles: '$(Build.SourcesDirectory)/test-results/pytest.xml'
+            failTaskOnFailedTests: true
+            testRunTitle: 'Python unit tests'
