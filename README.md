@@ -4,7 +4,7 @@
 
 [![Build Status](https://dev.azure.com/AVEVA-VSTS/Cloud%20Platform/_apis/build/status%2Fproduct-readiness%2FAVEVA.sample-connect-streams_creating_reading_and_writing_data?repoName=AVEVA%2Fsample-connect-streams_creating_reading_and_writing_data&branchName=main)](https://dev.azure.com/AVEVA-VSTS/Cloud%20Platform/_build/latest?definitionId=24606&repoName=AVEVA%2Fsample-connect-streams_creating_reading_and_writing_data&branchName=main)
 
-The sample code in this topic demonstrates how to invoke Streams REST APIs using Python. By examining the code, you will see how to create an Streams Type and Stream, and how to backfill and read data from the Streams. There are three examples of reading data. Reading raw (stored) values of a single stream, reading interpolated data for a single stream and performing a bulk sampled call for multiple streams.
+This notebook demonstrates zero-copy ecosystem consumption of CONNECT Virtual Tables through an open Iceberg-style flow.
 
 The sections that follow provide a brief description of the process from beginning to end.
 

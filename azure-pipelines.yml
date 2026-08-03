@@ -52,3 +52,13 @@ jobs:
             python -m pip install -r requirements.txt
             python -m pip freeze
           displayName: 'Install Python dependencies'
+        - script: |
+            echo "Running pytest"
+            python -m pytest -q --junitxml=test-results/pytest-results.xml
+          displayName: 'Run pytest tests'
+        - task: PublishTestResults@2
+          displayName: 'Publish pytest results'
+          inputs:
+            testResultsFormat: 'JUnit'
+            testResultsFiles: 'test-results/pytest-results.xml'
+            testRunTitle: 'Python pytest results'
