@@ -1,0 +1,6 @@
+adlfs==2026.5.0
+fastavro==1.12.2
+fsspec==2026.7.0
+pandas==3.0.5
+plotly==6.9.0
+requests==2.34.2
