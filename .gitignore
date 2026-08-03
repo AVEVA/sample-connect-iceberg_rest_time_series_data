@@ -4,4 +4,4 @@ product-readiness.*
 config.ini
 appsettings.json
 __pycache__/
-/tests/__pycache__
+tests/__pycache__/
