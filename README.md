@@ -2,7 +2,7 @@
 
 **Version:** 1.0.0
 
-[![Build Status](https://dev.azure.com/AVEVA-VSTS/Cloud%20Platform/_apis/build/status%2Fproduct-readiness%2FAVEVA.sample-connect-streams_creating_reading_and_writing_data?repoName=AVEVA%2Fsample-connect-streams_creating_reading_and_writing_data&branchName=main)](https://dev.azure.com/AVEVA-VSTS/Cloud%20Platform/_build/latest?definitionId=24606&repoName=AVEVA%2Fsample-connect-streams_creating_reading_and_writing_data&branchName=main)
+[![Build Status](https://dev.azure.com/AVEVA-VSTS/Cloud%20Platform/_apis/build/status%2Fproduct-readiness%2FAVEVA.sample-connect-iceberg_rest_time_series_data?repoName=AVEVA%2Fsample-connect-iceberg_rest_time_series_data&branchName=refs%2Fpull%2F1%2Fmerge)](https://dev.azure.com/AVEVA-VSTS/Cloud%20Platform/_build/latest?definitionId=24948&repoName=AVEVA%2Fsample-connect-iceberg_rest_time_series_data&branchName=refs%2Fpull%2F1%2Fmerge)
 
 This notebook demonstrates zero-copy ecosystem consumption of CONNECT Virtual Tables through an open Iceberg-style flow.
 
