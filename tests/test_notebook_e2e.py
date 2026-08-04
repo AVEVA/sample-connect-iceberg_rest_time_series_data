@@ -14,11 +14,9 @@ See the License for the specific language governing permissions and
 limitations under the License.
 SPDX-License-Identifier: Apache-2.0
 
-End-to-end tests for Program.py.
-
-All HTTP calls are intercepted with unittest.mock so no real network traffic
-or credentials are needed.  The tests exercise the full call sequence from
-token acquisition through data writes and reads.
+These end-to-end tests execute the notebook workflow with mocked REST and
+filesystem dependencies to verify metadata discovery and data-loading logic
+without calling external services.
 '''
 
 import io
